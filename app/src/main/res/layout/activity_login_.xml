@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity"
+    android:background="@drawable/backceleste"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:id="@+id/logo_app"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo_app"
+        android:layout_centerHorizontal="true"
+        android:text="¿QUÉ BUSCAS?"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_que_buscas"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="USUARIO"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/tv_que_buscas"
+        android:layout_marginBottom="-40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/btn_entrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_nombre_usuario"
+        >
+
+        <EditText
+            android:id="@+id/nombre_usuario_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu nombre de usuario"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_border"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_password"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/contraseña_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu contraseña"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_border"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonentrar"
+        android:layout_above="@id/cupon_gratis_img_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-45dp"
+        />
+    <!--
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonentrar"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/id_firma"
+        android:layout_marginBottom="-60dp"
+        />
+        -->
+    <ImageView
+        android:id="@+id/cupon_gratis_img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/recibecupongratis"
+        android:layout_above="@+id/btn_crear_usuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        />
+
+    <Button
+        android:id="@+id/btn_crear_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/crearunusuario"
+        android:layout_above="@id/id_firma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp"
+        />
+
+    <ImageView
+        android:id="@+id/id_firma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/firma"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp"
+        />
+</RelativeLayout>
